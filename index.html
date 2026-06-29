@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Realistic Highway Simulator</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+                "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+            }
+        }
+    </script>
+</head>
+<body>
+    <div id="ui">
+        <div class="hud-item">Gear: <span id="gearDisplay">N</span></div>
+        <div class="hud-item">Speed: <span id="speedDisplay">0</span> km/h</div>
+        <div class="hud-item">Health: <span id="healthDisplay">100</span>%</div>
+        <div class="hud-item" id="clutchWarning"></div>
+    </div>
+    
+    <div id="start-screen">
+        <h1>Realistic Highway Sim</h1>
+        <p>Press <strong>Start Engine</strong> to initialize audio and play.</p>
+        <button id="startBtn">Start Engine</button>
+    </div>
+
+    <script type="module" src="game.js"></script>
+</body>
+</html>
